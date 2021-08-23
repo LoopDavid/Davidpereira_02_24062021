@@ -63,7 +63,7 @@
 }
 
 .header-text_filtre {
-  text-decoration: bold;
+
   display: flex;
 
 }
@@ -87,12 +87,12 @@
 .hebergements__vignette {
 
   margin: auto;
-  width: 175px;
-  height: 200px;
+  width: 90%;
+  height: 210px;
   background-color: white;
   padding: 5px;
   margin-top: 15px;
-  border-radius: 18px;
+  border-radius: 20px;
 
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
 
@@ -100,7 +100,9 @@
 .hebergements__vignette_h3 {
   font-family: 'ralewaymedium';
   color: black;
-  font-size: 12.5px;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .liens_vignette {
@@ -116,6 +118,10 @@
   width: 30%;
 }
 
+.populaires__vignette_prix {
+  height: 30%;
+}
+
 .activites {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -125,7 +131,9 @@
 }
 
 .activites__h2 {
+  margin: 50px;
   height: 20%;
+
 
 
 }
@@ -203,6 +211,15 @@
 }
 
 /* fin media PC */
+/* debut du media tablette  */
+
+@media screen and (max-width: 1440px){
+
+
+
+
+
+
   /* téléphone  */
 @media screen and (max-width: 1000px){
 
@@ -352,7 +369,7 @@
 }
 
 .header-text_filtre {
-  text-decoration: bold;
+
   width: 100%;
 
 
@@ -389,6 +406,7 @@
 .liens_vignette {
   width: auto;
 }
+
 .hebergements__vignette {
 
 
@@ -409,6 +427,7 @@
   border-radius:18px 18px 0 0;
 }
 .hebergement__bloc_txt {
+  margin-bottom: 0;
   padding: 6px;
 }
 
@@ -443,7 +462,7 @@
 }
 
 .activites__h2 {
-
+  margin: 50px;
 
 }
 .activites__bloc_img {
@@ -501,12 +520,12 @@ footer {
 
 body {
   font-family: "Raleway", "Sans serif";
-  align-items: center;
   margin: auto;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h3 {
@@ -556,21 +575,23 @@ h3{
 }
 
 .menu-header_link {
-  color: #0065FC;
-  padding: 2rem;
+  color: black !important;
+  padding: 50px;
   font-weight: 500;
   text-align: center;
   transition-duration: 0.1s;
 }
-.menu-header_link:hover {
 
-  border-top: 3px solid #0065FC;
-}
+
+.menu-header_link[data-active="true"] {
+    border-top: 3px solid #0065FC;
+    color: #0065FC !important;
 }
 
-.menu-header_link:active {
-
+.menu-header_link[data-active="false"]:hover {
+    border-top: 3px solid #0065FC;
 }
+
 
 .menu-header__sinscrire {
   display: flex;
@@ -687,13 +708,7 @@ h3{
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-
-
-
 }
-
-
-
 
 .hebergements__vignette:hover {
   transform:scale(1.02);
@@ -707,7 +722,7 @@ h3{
 }
 
 .hebergements__bloc_img {
-  height: 60%
+  height: 68%
 }
 
 .hebergements__vignette_img {
@@ -718,7 +733,9 @@ h3{
 
 }
 
-
+.hebergement__bloc_txt {
+  margin-left: 10px;
+}
 
 .hebergements__vignette_prix {
   margin-top: 5px;
@@ -728,27 +745,27 @@ h3{
 
 .hebergements__bloc_etoile {
   display: flex;
-  width: 40%;
-  margin: 5px
 }
 
 .etoile_bleu {
   margin-right: 1px;
-  width: 10px;
+  width: 13px;
   filter: invert(30%) sepia(80%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
 }
 
 .etoile_grise {
   margin-right: 1px;
-  width: 10px;
+  width: 13px;
   filter: opacity(20%);
 
 }
 
 .hebergements__btn {
+  color: black !important;
   width: 100px;
   margin-top: 50px;
   font-family: 'ralewaymedium';
+
 
 }
 
@@ -809,7 +826,7 @@ width: 100%;
    background-color: white;
    border-radius: 25px;
    display: flex;
-   height: 130px;
+   height: 150px;
    width: auto;
    padding: 5px;
    margin: 15px;
@@ -833,6 +850,8 @@ width: 100%;
 .populaires__vignette_prix {
     font-size: 11px;
     color: black;
+
+
 }
 
 .activites__h3 {
