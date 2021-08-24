@@ -1,6 +1,6 @@
 /* Reglages général du site / tailles ecrans  */
 /* PC  */
-@media screen and (min-width: 1001px){
+/* @media screen and (min-width: 991px) */
 
 .bloc-logo-nav {
   grid-template-columns: auto 1fr auto auto;
@@ -32,10 +32,6 @@
   border: 0.5px solid #F2F2F2;
   padding-left: 10px;
   font-weight: bold;
-}
-
-.header__logo_search{
-  display: none;
 }
 
 .header-filtres li  {
@@ -77,7 +73,7 @@
 
 .hebergements {
   background-color: #F2F2F2;
-  width: 70%;
+
   border-radius: 15px;
   padding: 25px;
 
@@ -115,7 +111,6 @@
   margin-left: 30px;
   padding: 25px;
   border-radius: 15px;
-  width: 30%;
 }
 
 .populaires__vignette_prix {
@@ -126,20 +121,19 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 150px 60px 60px 60px 150px;
-  margin: 50px;
+  width: 95%;
+  margin:auto;
 
 }
 
 .activites__h2 {
-  margin: 50px;
+  margin: 25px;
   height: 20%;
-
-
-
 }
 .activites__bloc_img {
   flex: 1;
   height: 80%;
+  display: contents;
 }
 
 .activites__img {
@@ -167,6 +161,7 @@
 .activites__vignette1 {
   grid-row: 2/7;
   grid-column: 1/2;
+  margin-left: 0;
 }
 
 .activites__vignette2 {
@@ -208,20 +203,58 @@
 .footer__link {
   margin: 0;
 }
-}
+
 
 /* fin media PC */
+
+@media screen and (min-width: 1201px) {
+
+
+  .header__logo_search{
+    display: none;
+  }
+
+.populaires {
+    width: 30%;
+}
+}
+
 /* debut du media tablette  */
+@media screen and (min-width: 502px) {
+  .header__logo_search {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 1440px){
 
 
 
+.partie_milieu {
+  display: flex;
+  flex-direction: column;
+}
 
+.hebergements {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  order: 2;
+  margin-left: 0;
+  margin-top: 25px;
+
+}
+
+.populaires {
+  display: flex;
+  flex-direction: row;
+  order: 1;
+  margin-left: 0;
+}
 }
 
   /* téléphone  */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 501px){
 
 
 
@@ -277,17 +310,17 @@
 
 .bloc-recherche-logo_map {
   background-color: #F2F2F2;
-  padding:10px;
-
+  padding: 18.5px;
   border-radius: 15px 0 0 15px;
   width: 30px;
 
 }
 
 .bloc-recherche-petit_logo {
-  width:  14px;
-  margin-left: 3px;
-  padding: 5px;
+  width: 18px;
+  align-content: center;
+  display: flex;
+  height: 18px;
 
 }
 
@@ -325,7 +358,6 @@
   margin: auto;
   width: 18px;
   align-items: center;
-
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(48deg) brightness(101%) contrast(106%);
 }
 
@@ -382,17 +414,19 @@
 
 .populaires {
   width: auto;
+  margin: 10px auto;
   margin-bottom: 15px;
   order: 1;
   background-color: #F2F2F2;
   padding: 25px;
 }
 .populaires__vignette_prix {
-
+  margin: auto;
 }
 
 .hebergements {
-  width: auto;
+  display: block;
+  width: 88%;
   order: 2;
   padding: 25px;
 
@@ -411,7 +445,7 @@
 
 
   width: auto;
-  height: 200px;
+  height: 225px;
   background-color: white;
   padding: 5px;
   margin-top: 15px;
@@ -427,14 +461,14 @@
   border-radius:18px 18px 0 0;
 }
 .hebergement__bloc_txt {
-  margin-bottom: 0;
+  margin-top: -10px;
   padding: 6px;
 }
 
 .hebergements__vignette_h3 {
-  height: 50%;
-  font-size: 17px;
-  margin: auto;
+
+  font-size: 19px;
+  margin: 10px auto;
 
 }
 
@@ -457,13 +491,17 @@
 .activites {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
+
 
 }
 
 .activites__h2 {
   margin: 50px;
 
+}
+
+.activites__h3 {
+  margin: 10px;
 }
 .activites__bloc_img {
 
@@ -483,6 +521,8 @@
   flex-direction: column;
   margin: 25px 0 0 10px;
   max-height: 200px;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .activites__bloc_vignette:hover {
@@ -546,6 +586,7 @@ h3{
   align-items: center;
   max-width: 1440px;
   margin: auto;
+
 }
 
 
@@ -850,13 +891,15 @@ width: 100%;
 .populaires__vignette_prix {
     font-size: 11px;
     color: black;
-
-
+    height: 40%;
 }
 
+
+
 .activites__h3 {
-  margin: 15px;
-  font-size: 13px;
+
+  margin-left: 10px;
+  font-size: 18px;
 }
 
 
@@ -878,7 +921,10 @@ footer {
 
 .footer__link {
   color: black;
+}
 
+.footer__link-p {
+  margin: 10px auto;
 }
 
 .footer__link-p:hover {
