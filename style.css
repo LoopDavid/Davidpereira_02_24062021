@@ -220,7 +220,7 @@
 }
 
 /* debut du media tablette  */
-@media screen and (min-width: 502px) {
+@media screen and (min-width: 602px) {
   .header__logo_search {
     display: none;
   }
@@ -254,7 +254,7 @@
 }
 
   /* téléphone  */
-@media screen and (max-width: 501px){
+@media screen and (max-width: 601px){
 
 
 
