@@ -224,6 +224,10 @@
   .header__logo_search {
     display: none;
   }
+
+  .menu-header_link {
+    padding-left: 25px !important;
+  }
 }
 @media screen and (max-width: 1200px) {
 
@@ -638,7 +642,7 @@ h3{
   display: flex;
   align-items: center;
   grid-area: button;
-  padding: 2rem;
+  padding: 30px;
   color: #0065FC !important;
   font-weight: 600;
 }
