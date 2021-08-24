@@ -285,6 +285,10 @@
 
 }
 
+.menu-header_link[data-active="true"] {
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC !important;
+}
 
 .menu-header__sinscrire {
   order: 1;
