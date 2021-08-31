@@ -72,12 +72,10 @@
 }
 
 .hebergements {
+  width: 70%;
   background-color: #F2F2F2;
-
   border-radius: 15px;
   padding: 25px;
-
-
 }
 
 .hebergements__vignette {
@@ -113,6 +111,10 @@
   border-radius: 15px;
 }
 
+.populaires___vignette {
+  display: block;
+}
+
 .populaires__vignette_prix {
   height: 30%;
 }
@@ -140,6 +142,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .activites__bloc_vignette {
@@ -206,7 +209,7 @@
 
 
 /* fin media PC */
-
+/* pc  */
 @media screen and (min-width: 1201px) {
 
 
@@ -217,10 +220,18 @@
 .populaires {
     width: 30%;
 }
+
+.populaires___vignette {
+  display: block !important;
+}
+
 }
 
 /* debut du media tablette  */
-@media screen and (min-width: 602px) {
+@media screen
+  and (min-width: 602px)
+  and (max-width: 1200px) {
+
   .header__logo_search {
     display: none;
   }
@@ -228,11 +239,26 @@
   .menu-header_link {
     padding-left: 25px !important;
   }
-}
-@media screen and (max-width: 1200px) {
 
+  .populaires___vignette {
+  display: flex;
+  }
 
+  .pop_vignette1 {
+  width: 33%;
+  }
 
+  .pop_vignette2 {
+  width: 33%;
+  }
+
+  .pop_vignette3 {
+  width: 33%;
+  }
+
+  .pop_vignette2 .populaires__vignette_prix {
+  height: 26%;
+  }
 
 .partie_milieu {
   display: flex;
@@ -242,6 +268,7 @@
 .hebergements {
   display: flex;
   flex-direction: column;
+  width: 95%;
   margin: 10px auto;
   order: 2;
   margin-left: 0;
@@ -258,15 +285,13 @@
 }
 
   /* téléphone  */
-@media screen and (max-width: 601px){
-
-
-
+@media only screen
+    and (min-width: 300px)
+    and (max-width: 600px)  {
 
 .bloc-logo-nav {
   grid-template-columns: auto 1fr auto;
   grid-template-areas: "logo . button" "navbar navbar navbar";
-
 }
 
 .menu-header {
@@ -278,15 +303,14 @@
   border-bottom: 3px solid #F2F2F2;
   border-bottom-color: rgb(242, 242, 242);
   width: 50%;
-
 }
+
 .menu-header_link:hover {
   border-bottom: 3px solid #0065FC;
-
 }
 
 .menu-header_link[data-active="true"] {
-    border-bottom: 3px solid #0065FC;
+    border-bottom: 3px solid #0065FC !important;
     color: #0065FC !important;
 }
 
@@ -294,24 +318,21 @@
   order: 1;
 }
 
-
-
 .bloc-recherche {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
-
 }
+
 .header__h1 {
   font-family: 'ralewaymedium';
   font-size: 26px;
-
 }
 
 .header__p {
   font-size: 18px;
-
 }
+
 .bouton_rechercher {
   display: none;
 }
@@ -321,7 +342,6 @@
   padding: 18.5px;
   border-radius: 15px 0 0 15px;
   width: 30px;
-
 }
 
 .bloc-recherche-petit_logo {
@@ -329,7 +349,6 @@
   align-content: center;
   display: flex;
   height: 18px;
-
 }
 
 .bloc-recherche-champ_recherche {
@@ -337,13 +356,11 @@
 }
 
 .search_txt {
-
   height: 50px;
   border: 0.5px solid #F2F2F2;
   padding-left: 10px;
   font-weight: bold;
 }
-
 
 .header__bloc_search {
   display: flex;
@@ -378,7 +395,6 @@
    height: 33px;
    display: flex;
    align-items: center;
-
 }
 
 .header-filtres li:hover {
@@ -397,22 +413,15 @@
 .header-filtres {
   display: flex;
   flex-direction: column;
-
-
-
 }
 
 .header-filtres_logo {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .header-text_filtre {
-
   width: 100%;
-
-
 }
 
 .partie_milieu {
@@ -428,6 +437,7 @@
   background-color: #F2F2F2;
   padding: 25px;
 }
+
 .populaires__vignette_prix {
   margin: auto;
 }
@@ -437,8 +447,6 @@
   width: 88%;
   order: 2;
   padding: 25px;
-
-
 }
 
 .hebergements__bloc_vignette {
@@ -450,17 +458,13 @@
 }
 
 .hebergements__vignette {
-
-
   width: auto;
   height: 225px;
   background-color: white;
   padding: 5px;
   margin-top: 15px;
   border-radius: 18px;
-
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
-
 }
 
 .hebergements__vignette_img {
@@ -468,16 +472,15 @@
   height: 100px;
   border-radius:18px 18px 0 0;
 }
+
 .hebergement__bloc_txt {
   margin-top: -10px;
   padding: 6px;
 }
 
 .hebergements__vignette_h3 {
-
   font-size: 19px;
   margin: 10px auto;
-
 }
 
 .hebergements__btn {
@@ -499,20 +502,14 @@
 .activites {
   display: flex;
   flex-wrap: wrap;
-
-
 }
 
 .activites__h2 {
   margin: 50px;
-
 }
 
 .activites__h3 {
   margin: 10px;
-}
-.activites__bloc_img {
-
 }
 
 .activites__img {
@@ -545,7 +542,6 @@
 footer {
   display: flex;
   flex-direction: column;
-
 }
 }
 
