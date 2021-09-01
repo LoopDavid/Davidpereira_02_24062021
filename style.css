@@ -255,9 +255,11 @@
   .pop_vignette3 {
   width: 33%;
   }
-
+  .populaires__vignette_prix {
+  height: auto !important;
+  }
   .pop_vignette2 .populaires__vignette_prix {
-  height: 26%;
+  height: auto !important;
   }
 
 .partie_milieu {
