@@ -244,6 +244,18 @@
   display: flex;
   }
 
+  .populaires__vignette_bloc_txt_img {
+    margin: 5px !important;
+  }
+ .populaires__vignette_prix {
+   height:30% !important;
+ }
+ 
+  .hebergements__vignette_h3 {
+    font-size: 14px;
+
+  }
+
   .pop_vignette1 {
   width: 33%;
   }
@@ -255,12 +267,7 @@
   .pop_vignette3 {
   width: 33%;
   }
-  .populaires__vignette_prix {
-  height: auto !important;
-  }
-  .pop_vignette2 .populaires__vignette_prix {
-  height: auto !important;
-  }
+
 
 .partie_milieu {
   display: flex;
