@@ -161,40 +161,7 @@
 }
 
 
-.activites__vignette1 {
-  grid-row: 2/7;
-  grid-column: 1/2;
-  margin-left: 0;
-}
 
-.activites__vignette2 {
-  grid-column: 2/3;
-  grid-row: 2/5;
-
-}
-
-.activites__vignette3 {
-  grid-column: 3/4;
-  grid-row: 2/7;
-}
-
-.activites__vignette4 {
-  grid-column: 4/5;
-  grid-row: 2/4;
-}
-
-
-
-.activites__vignette5 {
-  grid-column: 2/3;
-    grid-row: 5/7;
-
-}
-
-.activites__vignette6 {
-  grid-column: 4/5;
-  grid-row: 4/7;
-}
 
 .bloc_footer {
   display: flex;
@@ -212,6 +179,9 @@
 /* pc  */
 @media screen and (min-width: 1201px) {
 
+.menu-header_link {
+  padding: 50px;
+}
 
   .header__logo_search{
     display: none;
@@ -221,15 +191,59 @@
     width: 30%;
 }
 
+.populaires__vignette_h3 {
+  font-family: 'ralewaymedium';
+color: black;
+font-size: 18px;
+margin-top: 5px;
+margin-bottom: 0;
+}
 .populaires___vignette {
   display: block !important;
 }
 
 }
 
+@media only screen and (min-width: 950px) {
+
+  .activites__vignette1 {
+    grid-row: 2/7;
+    grid-column: 1/2;
+    margin-left: 0;
+  }
+
+  .activites__vignette2 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+
+  }
+
+  .activites__vignette3 {
+    grid-column: 3/4;
+    grid-row: 2/7;
+  }
+
+  .activites__vignette4 {
+    grid-column: 4/5;
+    grid-row: 2/4;
+  }
+
+
+
+  .activites__vignette5 {
+    grid-column: 2/3;
+      grid-row: 5/7;
+
+  }
+
+  .activites__vignette6 {
+    grid-column: 4/5;
+    grid-row: 4/7;
+  }
+}
 /* debut du media tablette  */
 @media screen
-  and (min-width: 602px)
+  and (min-width: 702px)
   and (max-width: 1200px) {
 
   .header__logo_search {
@@ -238,6 +252,7 @@
 
   .menu-header_link {
     padding-left: 25px !important;
+    padding: 50px;
   }
 
   .populaires___vignette {
@@ -250,10 +265,11 @@
  .populaires__vignette_prix {
    height:30% !important;
  }
- 
-  .hebergements__vignette_h3 {
-    font-size: 14px;
 
+  .populaires__vignette_h3 {
+    font-size: 14px;
+    min-height: 45px;
+    margin-top: 5px;
   }
 
   .pop_vignette1 {
@@ -285,6 +301,9 @@
 
 }
 
+.hebergements__vignette {
+  height: 260px;
+}
 .populaires {
   display: flex;
   flex-direction: row;
@@ -293,10 +312,27 @@
 }
 }
 
+/* grid tablette / mobile */
+
+@media only screen
+    and (min-width: 702px )
+    and (max-width: 950px ) {
+
+      .liens_vignette {
+          width: 50%;
+      }
+
+.activites {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 200px);
+}
+
+}
+
   /* téléphone  */
 @media only screen
     and (min-width: 300px)
-    and (max-width: 600px)  {
+    and (max-width: 701px)  {
 
 .bloc-logo-nav {
   grid-template-columns: auto 1fr auto;
@@ -312,10 +348,12 @@
   border-bottom: 3px solid #F2F2F2;
   border-bottom-color: rgb(242, 242, 242);
   width: 50%;
+  padding: 10px;
 }
 
 .menu-header_link:hover {
   border-bottom: 3px solid #0065FC;
+
 }
 
 .menu-header_link[data-active="true"] {
@@ -446,14 +484,17 @@
   background-color: #F2F2F2;
   padding: 25px;
 }
-
+.populaires__vignette_h3 {
+  font-size: 16px;
+  margin: 10px auto;
+}
 .populaires__vignette_prix {
   margin: auto;
 }
 
 .hebergements {
   display: block;
-  width: 88%;
+  width: auto;
   order: 2;
   padding: 25px;
 }
@@ -488,7 +529,7 @@
 }
 
 .hebergements__vignette_h3 {
-  font-size: 19px;
+  font-size: 16px;
   margin: 10px auto;
 }
 
@@ -630,7 +671,7 @@ h3{
 
 .menu-header_link {
   color: black !important;
-  padding: 50px;
+
   font-weight: 500;
   text-align: center;
   transition-duration: 0.1s;
@@ -646,6 +687,9 @@ h3{
     border-top: 3px solid #0065FC;
 }
 
+.menu-header_link:hover {
+  color: #0065FC !important;
+}
 
 .menu-header__sinscrire {
   display: flex;
@@ -771,7 +815,7 @@ h3{
 }
 
 .populaires__bloc_img {
-  width: 60%;
+  width: 85%;
 
 }
 
@@ -793,8 +837,9 @@ h3{
 
 .hebergements__vignette_prix {
   margin-top: 5px;
-  color: black !important;
-  font-size: 11px;
+color: black !important;
+font-size: 11px;
+margin-bottom: 8px;
 }
 
 .hebergements__bloc_etoile {
@@ -877,15 +922,14 @@ width: 100%;
 }
 
 .populaires__vignette_bloc_txt_img {
-   background-color: white;
-   border-radius: 25px;
-   display: flex;
-   height: 150px;
-   width: auto;
-   padding: 5px;
-   margin: 15px;
-
-   box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
+  background-color: white;
+border-radius: 25px;
+display: flex;
+height: 150px;
+width: auto;
+padding: 5px;
+margin-bottom: 15px;
+box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
 }
 
 .populaires__vignette_img {
